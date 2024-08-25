@@ -3,11 +3,23 @@ module.exports = {
   mode: 'jit',
   content: ["*.{html,js}"],
   theme: {
+
+    fontSize: {
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.441rem',
+      '5xl': '3.052rem',
+      '9xl': '5.052rem',
+    },
+
     extend: {
       colors: {
           primary: '#242424',
           secondary: '#303030',
-          accent: '#3584e4',
+          accent: '#ff8c00',
           hover: '#383838',
           darktxt: '#ffffff',
           
@@ -31,6 +43,8 @@ module.exports = {
   plugins: [
     require('daisyui'),
   ],
+
+
   daisyui: {
     themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     darkTheme: "mytheme", // name of one of the included themes for dark mode
